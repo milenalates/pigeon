@@ -6,18 +6,22 @@ body{
 }
 
 /*Navigation*/
+
 .navigation-color{
   background: #3c948b;  
 }
 .navbar{
     margin-bottom: 0px;
+     position: relative;
 }
 
+.navbar-inverse{
+    border: none;
+}
 .navbar.navbar-inverse.navbar-fixed-top{
+    
     padding-top: 10px;
-    background: #3c948b; 
-    min-height: 70px;
-    border-bottom: 1px solid #23534e;
+    background: #3c948b;
 
 }
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
@@ -71,6 +75,11 @@ body{
 
 #myCarousel.carousel{
     margin-bottom: 0px;
+}
+.background-image{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .modal-dialog{
     max-width: 800px;
@@ -402,4 +411,17 @@ footer a:hover{
     position: fixed;
     right: 10px;
     bottom: 10px;;
+}
+
+
+#yoxview_picasa .item {
+  /*height: 170px;*/
+  margin-bottom: 15px;
+}
+#yoxview_picasa .item a img {
+  width: 100%;
+}
+#yoxview_picasa .item-description {
+  margin: 15px auto;
+  font-size: 0.8em;
 }

@@ -67,7 +67,8 @@
                     <li data-target="#myCarousel" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
-                    <div class="item active"> <img class="first-slide img-responsive" src="./img/1.jpg" alt="Pigeon_1">
+                    <div class="item active background-image img-responsive" style="background-image: url('./img/1.jpg')"> 
+                        <!--<img class="first-slide img-responsive" src="./img/1.jpg" alt="Pigeon_1">-->
                         <div class="container">
                             <div class="carousel-caption">
                                 <h2>PRVI SAJT O NI&#352;KIM RASAMA GOLUBOVA!</h2>
@@ -75,7 +76,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item"> <img class="second-slide img-responsive" src="./img/2.jpg" alt="Pigeon_2">
+                    <div class="item background-image" style="background-image: url('./img/2.jpg')"> 
+<!--                        <img class="second-slide img-responsive" src="./img/2.jpg" alt="Pigeon_2">-->
                         <div class="container">
                             <div class="carousel-caption">
                                 <h2>PRVI SAJT O NI&#352;KIM RASAMA GOLUBOVA!</h2>
@@ -83,7 +85,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item"> <img class="third-slide img-responsive" src="./img/3.jpg" alt="Pigeon_3">
+                    <div class="item background-image" style="background-image: url('./img/3.jpg')"> 
+                        <!--<img class="third-slide img-responsive" src="./img/3.jpg" alt="Pigeon_3">-->
                         <div class="container">
                             <div class="carousel-caption">
                                 <h2>PRVI SAJT O NI&#352;KIM RASAMA GOLUBOVA!</h2>
@@ -285,7 +288,8 @@
     <div class="container-fluid my-pigeon">
         <div class="container" id="galerija">
             <h3 class="text-uppercase visokoletaci gray-color text-center" data-wow-duration="3s">Galerija</h3>
-            <ul class="row gallery-pigeon">
+            <div id="yoxview_picasa" class="thumbnails"></div>
+            <!-- <ul class="row gallery-pigeon">
                 <li class="col-lg-3 col-md-3 col-sm-4 col-xs-6" data-index="0"> <img class="img-responsive" src="./img/0dgoj1.jpg" alt="Gallery Photo1">
                     <p class="text">Optional text. This will also show in the modal</p>
                 </li>
@@ -298,7 +302,7 @@
                 <li class="col-lg-3 col-md-3 col-sm-4 col-xs-6" data-index="3"> <img class="img-responsive" src="./img/0dgoj1.jpg" alt="Gallery Photo1">
                     <p class="text">Optional text. This will also show in the modal</p>
                 </li>
-            </ul>
+            </ul> -->
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -438,15 +442,26 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="./js/jquery.min.js"><\/script>')
-    </script>
     <script src="./js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="./js/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
     <script src="./js/wow.min.js"></script>
+    <script src="./js/yoxview/yoxview-init.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-19884217-1']);
+        _gaq.push(['_trackPageview']);
+        
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </body>
 
 </html>
